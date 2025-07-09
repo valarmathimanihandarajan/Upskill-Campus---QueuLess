@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
+  margin: 0;
+  padding: 0;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.container {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  animation: slideUp 0.6s ease-out;
+}
+
+h1, h2 {
+  font-size: 2.2em;
+  color: #2a2a72;
+}
+
+.menu {
+  margin-top: 30px;
+}
+
+a.btn, button {
+  display: inline-block;
+  background: #2a2a72;
+  color: white;
+  font-size: 1.1em;
+  padding: 15px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a.btn:hover, button:hover {
+  background: #3949ab;
+  transform: scale(1.05);
+}
+
+form {
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 1em;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  font-size: 1em;
+  color: #2a2a72;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #3949ab;
+}
+
+.queue-list {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
